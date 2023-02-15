@@ -1,10 +1,15 @@
+import GlobalStyle from "./components/GlobalStyle"
+
+// import pages
+import About from "./pages/About"
 
 function App() {
   return (
     <div className="App">
-      <h1>Film</h1>
+      <GlobalStyle />
+      <About />
     </div>
   )
 }
 
-export default App;
+export default App
