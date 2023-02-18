@@ -5,36 +5,30 @@ import { faLink } from "@fortawesome/free-solid-svg-icons"
 import { motion } from "framer-motion"
 import spacerace from "../assets/space-race.jpeg"
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-}
-
-const projectVariant = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
-}
-
 const Project = ({ title, image, tech, description, link, glink }) => {
-
   return (
-    <motion.div variants={projectVariant} className="m-8 lg:m-6">
+    <motion.div
+      className="text-center p-8"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0 },
+      }}
+    >
       <div>
         <a href={link}
           target="_blank"
           rel="noreferrer"
-
         >
           <img src={image} alt="project image" className="overflow-hidden rounded-lg" />
         </a>
 
         <div className="flex justify-between items-center mt-1">
           <div>
-            <p className="text-2xl font-playfair text-zinc-800">{title}</p>
+            <p className="text-2xl font-playfair text-zinc-800 text-left">{title}</p>
             <p>{tech}</p>
           </div>
 
@@ -53,11 +47,8 @@ const Project = ({ title, image, tech, description, link, glink }) => {
             </a>
           </div>
         </div>
-
-
-        <p className="mt-1 text-black">{description}</p>
+        <p className="mt-1 text-black text-left">{description}</p>
       </div>
-
     </motion.div>
   )
 }
@@ -90,12 +81,8 @@ const Projects = () => {
 
       {/* PROJECTS */}
       <div className="flex justify-center">
-        <motion.div
+        <div
           className="lg:grid lg:grid-cols-2"
-          variants={container}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
         >
 
           <Project title="Space Race"
@@ -121,9 +108,7 @@ const Projects = () => {
             link="https://github.com/trsalondra/space_race"
             glink="https://trsalondra.github.io/space_race/"
           />
-
-
-        </motion.div>
+        </div>
       </div>
     </section>
   )
