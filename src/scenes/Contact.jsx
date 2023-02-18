@@ -56,17 +56,17 @@ const Contact = () => {
           }}
           className="flex flex-col justify-center items-start"
         >
-          <div className="h-12 flex items-center text-2xl">
+          <div className="h-12 flex items-center">
             <FontAwesomeIcon icon={faUser} className="w-5 h-5 pr-4 text-blue"></FontAwesomeIcon>
             <h3 className="text-zinc-700">Alondra Torres</h3>
           </div>
 
-          <div className="h-12 flex items-center text-2xl">
+          <div className="h-12 flex items-center">
             <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5 pr-4 text-blue"></FontAwesomeIcon>
             <span className="text-zinc-700">trsalondra@gmail.com</span>
           </div>
 
-          <div className="h-12 flex items-center text-2xl">
+          <div className="h-12 flex items-center">
             <FontAwesomeIcon icon={faPhone} className="w-5 h-5 pr-4 text-blue"></FontAwesomeIcon>
             <span className="text-zinc-700">(214) 916 - 6598</span>
           </div>

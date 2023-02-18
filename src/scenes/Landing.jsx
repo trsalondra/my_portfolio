@@ -51,7 +51,7 @@ const Landing = () => {
           <h1 className="text-6xl font-playfair font-semibold text-center md:text-start text-black">Alondra</h1>
           <h2 className="text-xl font-playfair text-center md:text-start  text-red">Full Stack Software Engineer</h2>
 
-          <p className="mt-5 mb-7 text-sm text-center md:text-start">
+          <p className="mt-5 mb-7 text-center md:text-start">
             Motivated and results-oriented software engineering associate with a blend of leadership skills
             and qualities. A former high school Algebra teacher with the ability to learn new concepts and adapt
             to new working environments.
