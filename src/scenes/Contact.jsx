@@ -86,7 +86,7 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
+            action="https://formsubmit.co/dd23b780491599c0149bb701d7f52be1"
             method="POST"
             className="text-black"
           >
@@ -107,7 +107,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full placeholder-opaque-black p-3 mt-5 rounded-lg   border-dark-grey border-2"
+              className="w-full placeholder-opaque-black p-3 mt-5 rounded-lg border-dark-grey border-2"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
