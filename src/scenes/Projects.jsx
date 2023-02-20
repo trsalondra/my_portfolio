@@ -27,8 +27,8 @@ const Project = ({ title, image, tech, description, link, glink }) => {
         </a>
 
         <div className="flex justify-between items-center mt-1">
-          <div>
-            <p className="text-2xl font-playfair text-zinc-800 text-left">{title}</p>
+          <div className="text-left">
+            <p className="text-2xl font-playfair text-zinc-800">{title}</p>
             <p>{tech}</p>
           </div>
 
@@ -84,30 +84,29 @@ const Projects = () => {
         <div
           className="lg:grid lg:grid-cols-2"
         >
-
           <Project title="Space Race"
             image={spacerace}
             tech="HTML, CSS, JavaScript"
             description="Two player game, where two players take turns "
-            link="https://github.com/trsalondra/space_race"
-            glink="https://trsalondra.github.io/space_race/"
+            link="https://trsalondra.github.io/space_race/"
+            glink="https://github.com/trsalondra/space_race"
+          />
+
+          {/* <Project title="Space Race"
+            image={spacerace}
+            tech="HTML, CSS, JavaScript"
+            description="Two player game, where two players take turns "
+            link="https://trsalondra.github.io/space_race/"
+            glink="https://github.com/trsalondra/space_race"
           />
 
           <Project title="Space Race"
             image={spacerace}
             tech="HTML, CSS, JavaScript"
             description="Two player game, where two players take turns "
-            link="https://github.com/trsalondra/space_race"
-            glink="https://trsalondra.github.io/space_race/"
-          />
-
-          <Project title="Space Race"
-            image={spacerace}
-            tech="HTML, CSS, JavaScript"
-            description="Two player game, where two players take turns "
-            link="https://github.com/trsalondra/space_race"
-            glink="https://trsalondra.github.io/space_race/"
-          />
+            link="https://trsalondra.github.io/space_race/"
+            glink="https://github.com/trsalondra/space_race"
+          /> */}
         </div>
       </div>
     </section>
