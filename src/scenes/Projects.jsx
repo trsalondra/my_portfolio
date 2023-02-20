@@ -82,7 +82,7 @@ const Projects = () => {
       {/* PROJECTS */}
       <div className="flex justify-center">
         <div
-          className="lg:grid lg:grid-cols-2"
+          // className="lg:grid lg:grid-cols-2"
         >
           <Project title="Space Race"
             image={spacerace}

@@ -32,7 +32,7 @@ const Footer = () => {
 
         <div className="text-center md:flex md:justify-end md:items-center">
           <p className="font-opensans text-sm text-white">
-            ©2023 trsalondra. All Rights Reserved.
+            © 2023 All Rights Reserved.
           </p>
         </div>
 
